@@ -1,0 +1,30 @@
+{
+  "name": "discordle",
+  "version": "1.0.0",
+  "description": "A discord bot that lets you play wordle.",
+  "main": "index.ts",
+  "scripts": {
+    "test": "ts-node index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phiefferj24/discordle.git"
+  },
+  "keywords": [
+    "discord",
+    "discordbot",
+    "discordjs",
+    "wordle"
+  ],
+  "author": "JimIsWayTooEpic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phiefferj24/discordle/issues"
+  },
+  "homepage": "https://github.com/phiefferj24/discordle#readme",
+  "dependencies": {
+    "@discordjs/rest": "^0.3.0",
+    "discord.js": "^13.6.0",
+    "discordx": "^9.4.1"
+  }
+}
