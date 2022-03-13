@@ -110,9 +110,8 @@ client.on('interactionCreate', async interaction => {
 const rest = new REST().setToken(config.token);
 
 (async () => {
-    await rest.put(Routes.applicationGuildCommands("952342452591796314", "952357049243676742"), { body: [guess.data, wordle.data, remind.data, cancel.data] })
+    await rest.put(Routes.applicationCommands(config.id), { body: [guess.data, wordle.data, remind.data, cancel.data] })
 })()
-
 client.login(config.token).then(() => {
     client.user.setActivity("Wordle", {
         type: "PLAYING"
